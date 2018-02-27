@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/YellowGreen"
+    tools:context="com.example.dashan.agrofarm.LoginMobile">
+    <TextView
+        android:id="@+id/title_text"
+        android:textColor="@color/LightGoldenrodYellow"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/app_name"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_below="@+id/title_text"
+        android:paddingTop="100dp"
+        android:id="@+id/phone_auth_fields"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/field_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter mobile no"
+                android:textColorHint="@color/Black"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/field_verification_code"
+                android:textColorHint="@color/Black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="enter otp"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:weightSum="3.0">
+
+            <Button
+                android:id="@+id/button_start_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@color/DarkGreen"
+                android:text="start"
+                android:textColor="@color/White"
+
+                />
+
+            <Button
+                android:id="@+id/button_verify_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/DarkGreen"
+                android:textColor="@color/White"
+                android:layout_weight="1.0"
+                android:text="verify"
+                />
+
+            <Button
+                android:id="@+id/button_resend"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                android:background="@color/DarkGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="resend"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

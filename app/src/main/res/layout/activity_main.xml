@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGreen"
+    tools:context="com.example.dashan.agrofarm.MainActivity">
+<android.support.v4.view.ViewPager
+    android:layout_height="480dp"
+    android:layout_width="match_parent"
+    android:id="@+id/view_pager"
+
+    />
+
+
+    <LinearLayout
+        android:id="@+id/dot_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="14dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_button"
+        android:background="@color/DarkGreen"
+        android:text="next"
+        android:layout_below="@id/view_pager"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/next_button"
+        android:layout_below="@id/view_pager"
+        android:layout_marginLeft="200dp"
+        android:background="@color/Brown"
+        android:text="Skip"
+        android:id="@+id/skip_button"/>
+
+</RelativeLayout>
