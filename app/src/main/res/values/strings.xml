@@ -9,4 +9,5 @@
     <string name="action_map">action_map_activity</string>
     <string name="Settings">Settings</string>
     <string name="Logout_menu">Logout</string>
+    <string name="title_activity_profile_user">ProfileUser</string>
 </resources>

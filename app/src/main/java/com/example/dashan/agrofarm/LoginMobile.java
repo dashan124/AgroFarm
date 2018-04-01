@@ -92,7 +92,7 @@ private static final String TAG="PhoneAuthActivity";
                             Log.d(TAG, "signInWithCredential:success");
                             Toast.makeText(LoginMobile.this,"Login Successful",Toast.LENGTH_SHORT).show();
                             FirebaseUser user = task.getResult().getUser();
-                            startActivity(new Intent(LoginMobile.this, HomePage.class));
+                            startActivity(new Intent(LoginMobile.this, ProfileUser.class));
                             finish();
                         } else {
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
@@ -137,7 +137,7 @@ private static final String TAG="PhoneAuthActivity";
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser != null) {
-            startActivity(new Intent(LoginMobile.this, HomePage.class));
+            startActivity(new Intent(LoginMobile.this, ProfileUser.class));
             finish();
         }
     }
