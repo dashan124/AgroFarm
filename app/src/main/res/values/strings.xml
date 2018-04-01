@@ -6,4 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="verify_note">To get access to missal readings, prayers and lots more, kindly log in with your mobile number.</string>
     <string name="code_instructions">Your details would never be shared</string>
+    <string name="action_map">action_map_activity</string>
+    <string name="Settings">Settings</string>
+    <string name="Logout_menu">Logout</string>
 </resources>
