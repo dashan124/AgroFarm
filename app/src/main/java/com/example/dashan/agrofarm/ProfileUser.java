@@ -38,9 +38,12 @@ private FirebaseAuth mAuth;
         mFolders=new ArrayList<>();
         mFolders.add(new CardBook("Bank","Categoire","Description",R.drawable.farmers_market));
 
+        mFolders.add(new CardBook("Payments","Categorie","payments with bank online",R.drawable.payments));
+        mFolders.add(new CardBook("Weather info","Categorie","Weather information",R.drawable.weatherphoto));
+
         RecyclerView recyclerView=(RecyclerView) findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myadapter=new RecyclerViewAdapter(ProfileUser.this,mFolders);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,3));
+        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
         recyclerView.setAdapter(myadapter);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -114,7 +117,9 @@ private FirebaseAuth mAuth;
 
         if (id == R.id.nav_camera) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.weather_activity_open) {
+            Intent intent=new Intent(ProfileUser.this,WeatherActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_slideshow) {
 

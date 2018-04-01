@@ -40,18 +40,18 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
         holder.tv_book_title.setText(mData.get(position).getTitle());
         holder.book_image.setImageResource(mData.get(position).getThumbnail());
 
-//        //set click listener for views
-//        holder.cardView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent=new Intent(mContext,DescriptionPage.class);
-//                intent.putExtra("BookTitle",mData.get(position).getTitle());
-//                intent.putExtra("Description",mData.get(position).getTitle());
-//                intent.putExtra("Categorie",mData.get(position).getCategory());
-//                intent.putExtra("Thumbnail",mData.get(position).getThumbnail());
-//                mContext.startActivity(intent);
-//            }
-//        });
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(mContext,DescriptionPage.class);
+                intent.putExtra("BookTitle",mData.get(position).getTitle());
+                intent.putExtra("Description",mData.get(position).getTitle());
+                intent.putExtra("Categorie",mData.get(position).getCategory());
+                intent.putExtra("Thumbnail",mData.get(position).getThumbnail());
+                mContext.startActivity(intent);
+            }
+        });
+
 
     }
 

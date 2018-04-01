@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dashan.agrofarm">
 
-    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE"></uses-permission>
+    <uses-permission android:name="android.permission.SEND_RESPOND_VIA_MESSAGE" />
 
     <application
         android:allowBackup="true"
@@ -23,7 +23,11 @@
         <activity
             android:name=".ProfileUser"
             android:label="@string/title_activity_profile_user"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".DescriptionPage"></activity>
     </application>
 
 </manifest>

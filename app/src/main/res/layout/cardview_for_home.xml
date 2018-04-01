@@ -8,6 +8,7 @@
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
     android:layout_margin="5dp"
     cardview:cardCornerRadius="4dp"
+    android:background="@drawable/selector"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
         android:layout_width="match_parent"
