@@ -1,5 +1,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">AgroFarm</string>
+    <string name="google_maps_api_key_android">AIzaSyCnHltFXF4TIUhyajg39fZ5GBO2zrYaX7M</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 

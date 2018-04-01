@@ -5,9 +5,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_maps_activity"
+            android:icon="@drawable/ic_place_picker"
+            android:title="Go to maps" />
         <item
             android:id="@+id/weather_activity_open"
             android:icon="@drawable/weatherphoto"

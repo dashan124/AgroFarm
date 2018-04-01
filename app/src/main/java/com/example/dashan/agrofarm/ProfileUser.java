@@ -115,7 +115,9 @@ private FirebaseAuth mAuth;
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_maps_activity) {
+            Intent intent=new Intent(ProfileUser.this,MapsActivity.class);
+            startActivity(intent);
             // Handle the camera action
         } else if (id == R.id.weather_activity_open) {
             Intent intent=new Intent(ProfileUser.this,WeatherActivity.class);
