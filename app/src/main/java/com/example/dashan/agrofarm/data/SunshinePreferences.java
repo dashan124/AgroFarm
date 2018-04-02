@@ -1,5 +1,6 @@
 
 package com.example.dashan.agrofarm.data;
+import  com.example.dashan.agrofarm.models.PlaceInfo;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,8 +8,10 @@ import android.preference.Preference;
 import android.preference.PreferenceManager;
 
 import com.example.dashan.agrofarm.R;
+import com.example.dashan.agrofarm.models.PlaceInfo;
 
 public class SunshinePreferences {
+
 
     /*
      * Human readable location string, provided by the API.  Because for styling,
@@ -132,7 +135,9 @@ public class SunshinePreferences {
     }
 
     public static double[] getDefaultWeatherCoordinates() {
-        /** This will be implemented in a future lesson **/
+        //** This will be implemented in a future lesson **//
+        //double latitude,logitude;
         return DEFAULT_WEATHER_COORDINATES;
     }
+
 }

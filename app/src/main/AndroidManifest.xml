@@ -37,11 +37,22 @@
             android:name=".ProfileUser"
             android:label="@string/title_activity_profile_user"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".DetailActivity" />
+        <activity
+            android:name=".DetailActivity"
+            android:parentActivityName=".WeatherActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WeatherActivity"/>
+        </activity>
+
+
         <activity android:name=".SettingsActivity" />
+
         <activity android:name=".WeatherActivity" />
         <activity android:name=".DescriptionPage" />
-        <activity android:name=".MapsActivity"></activity>
+        <activity android:name=".MapsActivity">
+
+        </activity>
     </application>
 
 </manifest>
