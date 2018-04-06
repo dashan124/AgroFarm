@@ -36,10 +36,13 @@ private FirebaseAuth mAuth;
         setContentView(R.layout.activity_profile_user);
 
         mFolders=new ArrayList<>();
-        mFolders.add(new CardBook("Bank","Categoire","Description",R.drawable.farmers_market));
-
-        mFolders.add(new CardBook("Payments","Categorie","payments with bank online",R.drawable.payments));
-        mFolders.add(new CardBook("Weather info","Categorie","Weather information",R.drawable.weatherphoto));
+        mFolders.add(new CardBook("Sbi Bhim Pay","Categorie Book","https://www.sbi.co.in/portal/web/personal-banking/bhim-sbi-pay",R.drawable.bhim_pay_sbi));
+        mFolders.add(new CardBook("Farming Equipments","Equipments","https://www.indiamart.com",R.drawable.equpments));
+        mFolders.add(new CardBook("Sbi Account","Bank","https://www.onlinesbi.com",R.drawable.bank_pic));
+        mFolders.add(new CardBook("Sbi For Farmers","Loans","https://www.sbi.co.in/portal/web/agriculture-banking/kisan-credit-card-kcc",R.drawable.kisaan_sbi));
+        mFolders.add(new CardBook("Prices of harvests","prices","http://www.agriwatch.com",R.drawable.price_pic_farmers));
+        mFolders.add(new CardBook("Weather Web","Weather Web","https://darksky.net/forecast",R.drawable.weatherphoto));
+        mFolders.add(new CardBook("Help Farming","Help Center","http://www.agrifarming.in/",R.drawable.ic_live_help_black_24dp));
 
         RecyclerView recyclerView=(RecyclerView) findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myadapter=new RecyclerViewAdapter(ProfileUser.this,mFolders);

@@ -43,9 +43,9 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(mContext,DescriptionPage.class);
+                Intent intent=new Intent(mContext,WebActivity.class);
                 intent.putExtra("BookTitle",mData.get(position).getTitle());
-                intent.putExtra("Description",mData.get(position).getTitle());
+                intent.putExtra("Description",mData.get(position).getDescription());
                 intent.putExtra("Categorie",mData.get(position).getCategory());
                 intent.putExtra("Thumbnail",mData.get(position).getThumbnail());
                 mContext.startActivity(intent);

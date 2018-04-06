@@ -20,6 +20,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.dashan.agrofarm.data.SunshinePreferences;
 import com.example.dashan.agrofarm.utilities.NetworkUtils;
@@ -327,8 +328,12 @@ public class WeatherActivity extends AppCompatActivity implements ForecastAdapte
                 break;
             }
             case (R.id.action_settings):{
-                Intent i = new Intent(WeatherActivity.this, SettingsActivity.class);
-                startActivity(i);
+                //here is the error in Settings Activity Iam Changing it to Toast message
+                //Then After End sem i Will Do it
+                //some error in fragment inflating
+                /*Intent i = new Intent(WeatherActivity.this, SettingsActivity.class);
+                startActivity(i);*/
+                Toast.makeText(this,"Settings is Clicked It will be Implemented Soon",Toast.LENGTH_SHORT).show();
                 break;
             }
         }
