@@ -43,7 +43,7 @@ private FirebaseAuth mAuth;
         mFolders.add(new CardBook("Prices of harvests","prices","http://www.agriwatch.com",R.drawable.price_pic_farmers));
         mFolders.add(new CardBook("Weather Web","Weather Web","https://darksky.net/forecast",R.drawable.weatherphoto));
         mFolders.add(new CardBook("Help Farming","Help Center","http://www.agrifarming.in/",R.drawable.ic_live_help_black_24dp));
-
+        mFolders.add(new CardBook("Dealer","Buy","to be Implemented Soon",R.drawable.bc));
         RecyclerView recyclerView=(RecyclerView) findViewById(R.id.recyclerview_id);
         RecyclerViewAdapter myadapter=new RecyclerViewAdapter(ProfileUser.this,mFolders);
         recyclerView.setLayoutManager(new GridLayoutManager(this,2));

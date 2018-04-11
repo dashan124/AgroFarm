@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -48,6 +49,10 @@ public class RecyclerViewAdapter  extends RecyclerView.Adapter<RecyclerViewAdapt
                 intent.putExtra("Description",mData.get(position).getDescription());
                 intent.putExtra("Categorie",mData.get(position).getCategory());
                 intent.putExtra("Thumbnail",mData.get(position).getThumbnail());
+                String tit=mData.get(position).getTitle().toString();
+                if(tit=="Dealer"){
+                    Toast.makeText(mContext,"TO be implemented soon",Toast.LENGTH_SHORT).show();
+                }
                 mContext.startActivity(intent);
             }
         });
